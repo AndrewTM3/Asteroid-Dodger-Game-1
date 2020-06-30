@@ -4,11 +4,11 @@ class Ship(pygame.sprite.Sprite):
 
 #create init function that takes in position
   def __init__(self,pos):
-    super().__init_()
+    super().__init__()
     #create image
     self.image=pygame.image.load("ship.png")
     #scale image
-    self.image=pygame.transform.smoothscale(self.image,(40,400))
+    self.image=pygame.transform.smoothscale(self.image,(40,40))
     #rotate image
     self.image=pygame.transform.rotate(self.image,-90)
     #create image rectangle
@@ -20,6 +20,6 @@ class Ship(pygame.sprite.Sprite):
 
   #update image
   def update(self):
-    self.rect.move_ip(self.seed)
+    self.rect.move_ip(self.speed)
 
 
