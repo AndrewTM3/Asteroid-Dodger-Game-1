@@ -16,6 +16,13 @@ color=(30,0,30)
 #fill screen with color
 screen.fill(color)
 
+#setup variables
+NumLevels=4
+Level=1
+AsteroidCount=3
+Player=Ship(20,200)
+
+
 #main function
 def main():
   #maximum refreshery
